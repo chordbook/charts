@@ -253,11 +253,11 @@ function init() {
   const container = $('#container');
 
   // Display preset chords (open chords)
-  for (const i = 0; i < chordChart.length; ++i) {
+  for (let i = 0; i < chordChart.length; ++i) {
     const section_struct = chordChart[i];
     const section = createSectionElement(section_struct);
 
-    for (const j = 0; j < section_struct.chords.length; ++j) {
+    for (let j = 0; j < section_struct.chords.length; ++j) {
       section.append(createChordElement(section_struct.chords[j]));
     }
 
