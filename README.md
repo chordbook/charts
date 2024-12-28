@@ -1,18 +1,18 @@
-# VexChords - Javascript Guitar Chord Renderer
+# @chordbook/charts - Javascript Guitar Chord Renderer
 
-VexChords renders guitar chords in your browser.
+Renders guitar chords in your browser.
 
 <p align="center">
   <img src='https://imgur.com/8Stl0gT.png' width=500>
   <img src='https://imgur.com/Gq9FpnU.png' width=500>
 </p>
 
-See demo: http://vexflow.com/vexchords [ [source](https://github.com/0xfe/vexchords/blob/master/static/demo.html) ]
+See demo: http://chordbook.github.io/charts
 
 ## Install
 
 ```
-npm i vexchords
+npm i @chordbook/charts
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm i vexchords
 ### Using ChordBox
 
 ```javascript
-import { ChordBox } from 'vexchords';
+import { ChordBox } from '@chordbook/charts';
 
 const chord = new ChordBox('#selector', {
   // Customizations (all optional, defaults shown)
@@ -78,7 +78,7 @@ chord.draw({
 ### Using the `draw` helper
 
 ```javascript
-import { draw } from 'vexchords';
+import { draw } from '@chordbook/charts';
 
 // Draw an open D7
 draw('#selector', {
@@ -89,17 +89,17 @@ draw('#selector', {
 ### Examples
 
 ```javascript
-import * as vexchords from 'vexchords';
+import { draw } from '@chordbook/charts';
 
-const sel = '#vexchords';
+const sel = '#chords';
 
 // Draw an open D7
-vexchords.draw(sel, {
+draw(sel, {
   chord: [[1, 2], [2, 1], [3, 2], [4, 0], [5, 'x'], [6, 'x']]
 });
 
 // Customize size and default color
-vexchords.draw(
+draw(
   sel,
   {
     chord: [[1, 2], [2, 1], [3, 2], [4, 0], [5, 'x'], [6, 'x']]
@@ -108,7 +108,7 @@ vexchords.draw(
 );
 
 // Set color of circles and bars only
-vexchords.draw(
+draw(
   sel,
   {
     chord: [[2, 3], [3, 3], [4, 3], [6, 'x']],
@@ -119,7 +119,7 @@ vexchords.draw(
 );
 
 // Set colors of bridge and text only
-vexchords.draw(
+draw(
   sel,
   {
     chord: [[1, 0], [2, 0], [6, 0]],
@@ -130,7 +130,7 @@ vexchords.draw(
 );
 
 // Tiny chords, don't show tuning keys
-vexchords.draw(
+draw(
   sel,
   {
     chord: [],
@@ -166,8 +166,13 @@ $ gcloud config set account xxx@gmail.com
 $ ./upload.sh
 ```
 
+## Acknowledgements
+
+This library is a fork of the excellent [vexchords](https://github.com/0xfe/vexchords) by Mohit Muthanna Cheppudira.
+
 ## License
 
+Copyright (c) 2024 Brandon Keepers and @chordbook contributors
 Copyright (c) 2010 Mohit Muthanna Cheppudira
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

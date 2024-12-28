@@ -8,8 +8,7 @@ export default defineConfig(({ mode }) => {
         sourcemap: true,
         lib: {
           entry: './src/index.js',
-          name: 'vexchords',
-          filename: 'vexchords',
+          name: '@chordbook/charts'
         },
         rollupOptions: {
           external: ['@svgdotjs/svg.js'],

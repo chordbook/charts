@@ -1,13 +1,13 @@
 {
-  "name": "vexchords",
-  "version": "1.2.0",
-  "description": "Javascript Chord Charts",
+  "name": "@chordbook/charts",
+  "version": "0.0.1",
+  "description": "SVG Chord Charts via JavaScript",
   "type": "module",
-  "module": "dist/vexchords.js",
-  "main": "dist/vexchords.udm.cjs",
+  "module": "dist/charts.js",
+  "main": "dist/charts.udm.cjs",
   "exports": {
-    "import": "./dist/vexchords.js",
-    "require": "./dist/vexchords.udm.cjs"
+    "import": "./dist/charts.js",
+    "require": "./dist/charts.udm.cjs"
   },
   "scripts": {
     "start": "vite",
@@ -17,19 +17,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0xfe/vexchords.git"
+    "url": "git+https://github.com/chordbook/charts.git"
   },
   "keywords": [
     "guitar",
     "music",
     "chords"
   ],
-  "author": "Mohit Cheppudira",
+  "contributors": [
+    "Brandon Keepers",
+    "Mohit Cheppudira"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/0xfe/vexchords/issues"
+    "url": "https://github.com/chordbook/charts/issues"
   },
-  "homepage": "https://github.com/0xfe/vexchords#readme",
+  "homepage": "https://github.com/chordbook/charts#readme",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@types/zepto": "^1.0.36",
