@@ -250,14 +250,14 @@ function createShapeChart(keys, container, shapes, shape) {
 }
 
 function init() {
-  var container = $('#container');
+  const container = $('#container');
 
   // Display preset chords (open chords)
-  for (var i = 0; i < chordChart.length; ++i) {
-    var section_struct = chordChart[i];
-    var section = createSectionElement(section_struct);
+  for (const i = 0; i < chordChart.length; ++i) {
+    const section_struct = chordChart[i];
+    const section = createSectionElement(section_struct);
 
-    for (var j = 0; j < section_struct.chords.length; ++j) {
+    for (const j = 0; j < section_struct.chords.length; ++j) {
       section.append(createChordElement(section_struct.chords[j]));
     }
 
@@ -265,10 +265,10 @@ function init() {
   }
 
   // Display shape chords for all keys
-  var keys_E = ['F', 'F#', 'Gb', 'G', 'G#', 'Ab', 'A', 'A#', 'Bb', 'C'];
-  var keys_A = ['C#', 'Db', 'D', 'D#', 'Eb', 'F', 'F#', 'Gb', 'G'];
+  const keys_E = ['F', 'F#', 'Gb', 'G', 'G#', 'Ab', 'A', 'A#', 'Bb', 'C'];
+  const keys_A = ['C#', 'Db', 'D', 'D#', 'Eb', 'F', 'F#', 'Gb', 'G'];
 
-  var shapes_E = [
+  const shapes_E = [
     'M E',
     'm E',
     '7 E',
@@ -280,7 +280,7 @@ function init() {
     '7sus4 E',
     '13 E'
   ];
-  var shapes_A = [
+  const shapes_A = [
     'M A',
     'm A',
     '7 A',
