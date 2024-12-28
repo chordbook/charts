@@ -1,6 +1,6 @@
-# @chordbook/charts - Javascript Guitar Chord Renderer
+# @chordbook/charts
 
-Renders guitar chords in your browser.
+Renders SVG chord diagrams for Guitar / Ukulele in your browser.
 
 <p align="center">
   <img src='https://imgur.com/8Stl0gT.png' width=500>
@@ -157,13 +157,6 @@ $ npm start
 
 # Publish: first update package version in package.json
 $ npm publish
-```
-
-## Upload demo
-
-```bash
-$ gcloud config set account xxx@gmail.com
-$ ./upload.sh
 ```
 
 ## Acknowledgements
