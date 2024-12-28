@@ -12,7 +12,7 @@
   "scripts": {
     "start": "vite",
     "prepare": "tsup src/index.ts --format esm,cjs --minify --dts --sourcemap",
-    "build": "vite build --outDir demo",
+    "build": "vite build --outDir demo --sourcemap",
     "lint": "eslint ."
   },
   "repository": {
