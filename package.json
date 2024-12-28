@@ -1,6 +1,6 @@
 {
   "name": "@chordbook/charts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SVG chord diagrams for Guitar / Ukulele",
   "type": "module",
   "module": "dist/index.js",
